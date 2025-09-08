@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+body{
+font-family: 'Source Sans PRO';
+font-weight: bold;
+}
+/* metoda inline-block */
+.parent.parent--inline-block {
+width: 640px;
+padding: 20px;
+}
+
+.parent.parent--inline-block div {
+display: inline-block;
+}
+
+.parent.parent--inline-block .child.child.child--first {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.parent.parent--inline-block .child.child.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px
+}
+
+.parent.parent--inline-block .child.child.child--last {
+    width: calc(40% - 10px);
+}
+/* metoda float */
+.parent.parent--float {
+width: 640px;
+padding: 20px;
+}
+
+.parent.parent--float div {
+float: left;
+}
+
+.parent.parent--float .child.child.child--first {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.parent.parent--float .child.child.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px
+}
+
+.parent.parent--float .child.child.child--last {
+    width: calc(40% - 10px);
+}
+
+/* metoda flexbox */
+.parent.parent--flexbox {
+clear: both;
+width: 640px;
+padding: 20px;
+display: flex;
+gap: 10px;
+}
+
+.parent.parent--flexbox .child.child--first{
+    width: 30%;
+}   
+
+.parent.parent--flexbox .child.child--middle{
+    width: 30%;
+}
+
+.parent.parent--flexbox .child.child--last{
+    width: 40%;
+}
