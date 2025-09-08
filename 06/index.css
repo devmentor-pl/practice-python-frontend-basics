@@ -1,0 +1,60 @@
+body {
+    background-color: antiquewhite;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 0px 20px;
+    
+}
+
+.card {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius:  5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.heading {
+font-weight: bold;
+margin: 10px;
+}
+
+.article {
+max-width: 100%;
+margin: 10px;
+}
+
+.date {
+    background-color: rgba(207, 207, 207, 0.445);
+    color: rgba(73, 73, 73, 0.863);
+    margin-top: auto;
+    border: 1px solid rgb(156, 155, 155);
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .card-deck{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px
+    }
+
+    .card {
+    width: 431px;
+    display: flex;
+    flex-direction: column;
+}
+
+}
