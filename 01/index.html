@@ -7,6 +7,124 @@
     <title>devmentor.pl - Python: Podstawowy frontend - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="./logo.png">
+            <p>Logo</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Kategorie</a>
+                    <ul>
+                        <li><a href="#">Technologie</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li>
+                            <a href="#">Więcej</a>
+                            <ul>
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">SQL</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Programowanie - jak uczyć się efektywnie?</h2>
+                <p>Autor: <strong>Paweł Truszkowski</strong> | 8 marca 2026 </p>
+            </header>
+
+            <figure>
+                <img src="programowanie.png" alt="Programowanie na laptopie" style="width: 700px; height: 400px">
+                <figcaption>Programowanie jako rozwijająca umiejętność</figcaption>
+            </figure>
+
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fuga suscipit quas rerum velit inventore doloribus architecto dolores earum. Natus fugit laudantium quos dignissimos voluptatibus libero cupiditate quibusdam explicabo tempora.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi perferendis possimus nobis maxime voluptas quidem eius vero neque esse repellendus nemo eum necessitatibus dicta, quo veritatis porro omnis. Culpa!
+                </p>
+            </section>
+            
+            <section>
+                <h3>Przykładowa tabela technologii</h3>
+                <table border="1">
+                    <thead>
+                        <th>Technologia</th>
+                        <th>Zastosowanie</th>
+                        <th>Popularność</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Backend, Data Since</td>
+                            <td>Wysoka</td>
+                        </tr>
+                        <tr>
+                            <td>Java Script</td>
+                            <td>Frontend, Web-Development</td>
+                            <td>Wysoka</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Bazy danych</td>
+                            <td>Średnia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+
+        <section id="comment-form">
+            <h3>Dodaj komentarz</h3>
+            <form>
+                <div>
+                    <label>Imię: </label>
+                    <input name="imie"/>
+                </div>
+                <div>
+                    <label>Komentarz: </label>
+                    <textarea rows="10" cols="50"></textarea>
+                </div>
+               <button type="submit">Wyślij komentarz</button>
+            </form>
+        </section>
+
+        <section id="comments">
+            <h3>Komentarze</h3>
+            <div>
+                <p>Świetny artykuł!</p>
+                <footer>
+                    <strong>Zdzisław</strong> | 30 luty 2026
+                </footer>
+            </div>
+            <div>
+                <p>Świetny artykuł!</p>
+                <footer>
+                    <strong>Zbyszek</strong> | 29 luty 2026
+                </footer>
+            </div>
+            <div>
+                <p>Świetny artykuł!</p>
+                <footer>
+                    <strong>Zdzisław</strong> | 8 marca 2026
+                </footer>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Moja strona 2026. Wszelkie prawa zastrzezone.</p>
+
+    </footer>
 </body>
 </html>
