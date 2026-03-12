@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal, italic;
+	font-weight: bold;
+
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(source-sans-pro/SourceSansPro-It.otf) format('opentype');
+    font-style: italic;
+}
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.child {
+    font-family: 'Source Sans Pro';
+    box-sizing: border-box;
+}
+
+.child--first  { 
+    font-style: normal; 
+}
+.child--middle { 
+    font-weight: 700;
+    font-style: normal; 
+}
+.child--last   { 
+    font-style: italic; 
+}
+
+
+/* INLINE-block */
+.parent--inline-block .child {
+    display: inline-block;
+}
+.parent--inline-block .child--first  { 
+    width: calc(30% - 7px); 
+}
+
+.parent--inline-block .child--middle { 
+    width: calc(30% - 7px); 
+    margin-left: 10px; 
+}
+
+.parent--inline-block .child--last { 
+    width: calc(40% - 6px); 
+    margin-left: 10px; 
+}
+
+
+/* FLOAT */
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.parent--float .child { 
+    float: left; 
+}
+
+.parent--float .child--first  { 
+    width: calc(30% - 7px); 
+}
+.parent--float .child--middle { 
+    width: calc(30% - 7px); 
+    margin-left: 10px; 
+}
+.parent--float .child--last   { 
+    width: calc(40% - 6px); 
+    margin-left: 10px; 
+}
+
+
+/* FLEXBOX */
+.parent--flexbox {
+    display: flex;
+}
+
+.parent--flexbox .child--first {
+    width: 30%;
+}
+
+.parent--flexbox .child--middle {
+    width: 30%;
+}
+
+.parent--flexbox .child--last {
+    width: 40%;
+}
