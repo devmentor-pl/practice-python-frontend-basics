@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid blue;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__logo, .nav__menu, .article, .footer__content {
+    background-color: #FFCA18;
+}
+
+
+header, section, footer { 
+    border: 3px solid green;
+    margin: 5px 0;
+}
