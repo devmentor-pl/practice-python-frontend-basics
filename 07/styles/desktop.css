@@ -1,0 +1,30 @@
+.nav {
+    position: static;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    position: static;
+    transform: none;
+    width: 150px;
+    height: 60px;
+}
+
+.nav__menu {
+    display: block;
+    width: 400px;
+    height: 60px;
+}
+
+.nav__hamburger {
+    display: none;
+}
+
+
+section .container {
+    flex-direction: row;
+}
+
+footer .container {
+    justify-content: center;
+}
