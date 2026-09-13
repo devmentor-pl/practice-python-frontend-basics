@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - Python: Podstawowy frontend - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./logo.png" alt="logo.png" width="200">
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Artykuły</a></li>
+                <li><a href="#">Edycje zawodów</a>
+                    <ul>
+                        <li><a href="#">Rok 2019</a></li>
+                        <li><a href="#">Rok 2020</a></li>
+                        <li><a href="#">Rok 2021</a>
+                            <ul>
+                                <li><a href="#">Holandia</a></li>
+                                <li><a href="#">Czechy</a></li>
+                                <li><a href="#">Chorwacja</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>PRz Racing Team zaprezentował nowy bolid PMT-03</h2>
+                <p>Autorzy: <strong>Maja Bakalarz, Anna Worosz</strong> | 2021-02-23 </p>
+            </header>
+            <img src="./pmt-03.jpg" alt="pmt-03.jpg" width="700">
+            <p>
+                Zespół PRz Racing Team 20 lutego br. oficjalnie zaprezentował swoją najnowszą konstrukcję PMT-03. To już
+                trzeci bolid wyścigowy w warsztacie, którego projekt w zeszłym roku wywalczył dla zespołu drugie miejsce
+                w kategorii Business Presentation podczas zawodów Formula Student Virtual Event 2020. W styczniu swoją
+                konstrukcję zespół przedpremierowo zaprezentował władzom uczelni.
+            </p>
+            <p>
+                PRz Racing Team jako Studenckie Koło Naukowe na Wydziale Budowy Maszyn i Lotnictwa Politechniki
+                Rzeszowskiej funkcjonuje od 2013 r. Opiekunem koła jest dr inż. Piotr Strojny. Zespół wyścigowy co roku
+                przygotowuje się do interdyscyplinarnych zawodów międzynarodowych Formuła Student odbywających się na
+                torach F1. Od początku swojej działalności zbudował trzy autorskie konstrukcje bolidów wyścigowych.
+                Wystartowały one dotychczas w ośmiu europejskich edycjach zawodów, m.in. na torach Wielkiej Brytanii,
+                Włoch, Węgier, Holandii czy Hiszpanii, oraz w amerykańskiej edycji zawodów online. Każdy kolejny bolid
+                ma za zadanie podnieść wiedzę i kompetencje, co przekłada się na zwiększenie zaawansowania
+                technologicznego.
+            </p>
+            <h3>Parametry techniczne</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nazwa parametru</th>
+                        <th>Wartość</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Moc</td>
+                        <td>78 KM</td>
+                    </tr>
+                    <tr>
+                        <td>Przyspieszenie</td>
+                        <td>3.8 s</td>
+                    </tr>
+                    <tr>
+                        <td>Masa</td>
+                        <td>214 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <h3>Dodaj komentarz</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Imię:</label></td>
+                    <td><input name="imie"></td>
+                </tr>
+                <tr>
+                    <td><label>Komentarz:</label></td>
+                    <td><textarea rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Wyślij</button></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <h3>Komentarze</h3>
+        <small><strong>Tomasz</strong> | 22 wrzesień 2021</small>
+        <p>Super fura!</p>
+        <small><strong>Łukasz</strong> | 11 kwiecień 2021</small>
+        <p>We Wrocławiu zbudowali szybszy xd</p>
+        <small> <strong>Paweł</strong> | 4 maj 2021</small>
+        <p>Ile pojedzie max?</p>
+        <br>
+    </main>
+
+    <footer>
+        <small>© 2021 PRz Racing Team. Wszelkie prawa zastrzeżone. Kopiowanie, powielanie i wykorzystywanie treści bez
+            zgody autora jest zabronione.</small>
+    </footer>
+
 </body>
+
 </html>
