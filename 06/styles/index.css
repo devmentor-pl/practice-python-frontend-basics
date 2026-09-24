@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.card {
+    border: 1px solid #dfdfdf; 
+    border-radius: 4px; 
+    margin-bottom: 16px; 
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.card-body,
+.card-footer {
+    padding: 20px;   
+}
+
+.card-footer {
+    background-color: #F7F7F7;
+    border-top: 1px solid #dfdfdf;
+    color: #969a9c;
+}
+
+@media (min-width: 601px){
+    .card-deck{
+        display: flex;
+        gap: 25px;
+    }
+
+    .card {
+        position: relative;
+        padding-bottom: 60px;
+        flex: 1;
+        margin-bottom: 0;
+    }   
+
+    .card-footer {
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+

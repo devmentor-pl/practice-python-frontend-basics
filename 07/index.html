@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Układ strony - Mobile First</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+    <header class="section section--header">
+        <div class="container container--header">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <div class="box box--logo"></div>
+            <nav class="box box--menu"></nav>
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu-list">
+                <li class="menu-box"></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section section--two-columns">
+        <div class="container container--two-columns">
+            <article class="box column"></article>
+            <article class="box column"></article>
+        </div>
+    </section>
+
+    <section class="section section--three-columns">
+        <div class="container container--three-columns">
+            <article class="box column"></article>
+            <article class="box column"></article>
+            <article class="box column"></article>
+        </div>
+    </section>
+
+    <footer class="section section--footer">
+        <div class="container container--footer">
+            <div class="box box--footer"></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
